@@ -1,0 +1,139 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f9fafb;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.cta-btn {
+    padding: 0.5rem 1rem;
+    background: #111827;
+    color: white !important;
+    border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+.primary-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Services */
+.services {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+/* FAQ */
+.faq {
+    padding: 4rem 2rem;
+}
+
+.faq-item {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1rem;
+    background: #e5e7eb;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #111827;
+    color: white;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
