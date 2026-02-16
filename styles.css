@@ -128,16 +128,13 @@ body {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
     padding: 0 1rem;
     background: white;
     border: 1px solid #e5e7eb;
 }
 
-.faq-answer.active {
-    max-height: 200px;
-    padding: 1rem;
-}
+
 
 /* Footer */
 footer {
