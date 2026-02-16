@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (faqQuestion && faqAnswer) {
         faqQuestion.addEventListener("click", function () {
-            faqAnswer.classList.toggle("active");
+            if (faqAnswer.style.maxHeight) {
+                faqAnswer.style.maxHeight = null;
+            } else {
+                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+            }
         });
     }
 });
+
