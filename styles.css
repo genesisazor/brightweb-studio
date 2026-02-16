@@ -35,6 +35,19 @@ body {
     font-size: 0.95rem;
 }
 
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+}
+
 .cta-btn {
     padding: 0.5rem 1rem;
     background: #111827;
