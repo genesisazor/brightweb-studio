@@ -1,8 +1,11 @@
 
-const faqQuestion = document.querySelector(".faq-question");
-const faqAnswer = document.querySelector(".faq-answer");
+document.addEventListener("DOMContentLoaded", function () {
+    const faqQuestion = document.querySelector(".faq-question");
+    const faqAnswer = document.querySelector(".faq-answer");
 
-faqQuestion.addEventListener("click", () => {
-    const isVisible = faqAnswer.style.display === "block";
-    faqAnswer.style.display = isVisible ? "none" : "block";
+    if (faqQuestion && faqAnswer) {
+        faqQuestion.addEventListener("click", function () {
+            faqAnswer.classList.toggle("active");
+        });
+    }
 });
