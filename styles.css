@@ -119,6 +119,10 @@ body {
     border: 1px solid #e5e7eb;
 }
 
+.faq-answer.active {
+    display: block;
+}
+
 /* Footer */
 footer {
     text-align: center;
