@@ -1,17 +1,25 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const faqQuestion = document.querySelector(".faq-question");
-    const faqAnswer = document.querySelector(".faq-answer");
+    const faqItems = document.querySelectorAll(".faq-item");
 
-    if (faqQuestion && faqAnswer) {
-        faqQuestion.addEventListener("click", function () {
-            if (faqAnswer.style.maxHeight) {
-                faqAnswer.style.maxHeight = null;
-            } else {
-                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
-            }
+faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+        const isOpen = answer.style.maxHeight;
+
+        // Close all answers first
+        document.querySelectorAll(".faq-answer").forEach((el) => {
+            el.style.maxHeight = null;
         });
-    }
+
+        // Open the clicked one if it was closed
+        if (!isOpen) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
 
     // Mobile navigation toggle
     const menuToggle = document.querySelector(".menu-toggle");
