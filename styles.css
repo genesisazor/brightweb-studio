@@ -210,26 +210,31 @@ body {
 
 .work-image {
     height: 200px;
-    background: #e5e7eb;
     border-radius: 12px;
     margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
 }
 
-.work-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        110deg,
-        rgba(255,255,255,0.2) 20%,
-        rgba(255,255,255,0.4) 40%,
-        rgba(255,255,255,0.2) 60%
-    );
-    transform: translateX(-100%);
-    transition: transform 1.2s ease;
+/* Add placeholder images for each card */
+.work-card:nth-child(1) .work-image {
+    background-image: url('https://via.placeholder.com/400x200?text=Nova+Finance'); 
+    background-size: cover;
+    background-position: center;
 }
+
+.work-card:nth-child(2) .work-image {
+    background-image: url('https://via.placeholder.com/400x200?text=Urban+Supply'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.work-card:nth-child(3) .work-image {
+    background-image: url('https://via.placeholder.com/400x200?text=Studio+Arc'); 
+    background-size: cover;
+    background-position: center;
+}
+
 
 .work-card:hover .work-image::after {
     transform: translateX(100%);
