@@ -187,6 +187,49 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* Work */
+.work {
+    background: #f9fafb;
+    text-align: center;
+}
+
+.work h2 {
+    margin-bottom: 3rem;
+}
+
+.work-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.work-card {
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.work-image {
+    height: 180px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.work-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.work-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.work-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
 /* Contact */
 .contact {
     padding: 6rem 2rem;
@@ -220,6 +263,10 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .work-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
     .menu-toggle {
         display: block;
     }
