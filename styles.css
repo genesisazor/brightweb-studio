@@ -241,18 +241,12 @@ body {
 
 /* Section Divider Accent */
 section {
-    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-section::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #2563eb;
-    margin: 3rem auto 0;
-    border-radius: 2px;
-    opacity: 0.3;
+section + section {
+    border-top: 1px solid #e5e7eb;
 }
 
 /* Footer */
