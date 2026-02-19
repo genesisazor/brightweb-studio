@@ -239,6 +239,22 @@ body {
     }
 }
 
+/* Section Divider Accent */
+section {
+    position: relative;
+}
+
+section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2563eb;
+    margin: 3rem auto 0;
+    border-radius: 2px;
+    opacity: 0.3;
+}
+
 /* Footer */
 footer {
     text-align: center;
